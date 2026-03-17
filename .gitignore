@@ -5,5 +5,5 @@ checkpoints/
 data/
 *.log
 .DS_Store
+venv/
 .venv311/
-.venv/

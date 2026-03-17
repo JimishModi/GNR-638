@@ -27,7 +27,7 @@ import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from utils.seed import set_seed
-from utils.logging import get_logger
+from utils.logger_utils import get_logger
 from dataloader.dataset_loader import get_dataloaders
 from models.model_loader import load_model
 from models.freeze_utils import freeze_backbone, unfreeze_full

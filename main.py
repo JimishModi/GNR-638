@@ -33,7 +33,7 @@ import yaml
 # Add project root to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from utils.logging import get_logger
+from utils.logger_utils import get_logger
 
 
 def set_seed(seed=42):
