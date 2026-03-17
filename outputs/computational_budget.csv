@@ -1,0 +1,16 @@
+Model,Scenario,Epochs,Train_Time_min,GPU,Params_M,MACs_G,FLOPs_G,VRAM_GB
+ResNet50,Linear Probe,30,15.0,NVIDIA GeForce RTX 4060 Laptop GPU,23.5,4.1,8.2,8.6
+ResNet50,Fine-Tuning (4 strats),120,60.0,NVIDIA GeForce RTX 4060 Laptop GPU,23.5,4.1,8.2,8.6
+ResNet50,Few-Shot (3 regimes x 2 modes),120,60.0,NVIDIA GeForce RTX 4060 Laptop GPU,23.5,4.1,8.2,8.6
+ResNet50,Corruption Robustness,30,15.0,NVIDIA GeForce RTX 4060 Laptop GPU,23.5,4.1,8.2,8.6
+ResNet50,Layer-wise Probing,0,0.0,NVIDIA GeForce RTX 4060 Laptop GPU,23.5,4.1,8.2,8.6
+DenseNet121,Linear Probe,30,15.0,NVIDIA GeForce RTX 4060 Laptop GPU,7.0,2.8,5.7,8.6
+DenseNet121,Fine-Tuning (4 strats),120,60.0,NVIDIA GeForce RTX 4060 Laptop GPU,7.0,2.8,5.7,8.6
+DenseNet121,Few-Shot (3 regimes x 2 modes),120,60.0,NVIDIA GeForce RTX 4060 Laptop GPU,7.0,2.8,5.7,8.6
+DenseNet121,Corruption Robustness,30,15.0,NVIDIA GeForce RTX 4060 Laptop GPU,7.0,2.8,5.7,8.6
+DenseNet121,Layer-wise Probing,0,0.0,NVIDIA GeForce RTX 4060 Laptop GPU,7.0,2.8,5.7,8.6
+EfficientNet-B0,Linear Probe,30,9.0,NVIDIA GeForce RTX 4060 Laptop GPU,4.0,0.4,0.8,8.6
+EfficientNet-B0,Fine-Tuning (4 strats),120,36.0,NVIDIA GeForce RTX 4060 Laptop GPU,4.0,0.4,0.8,8.6
+EfficientNet-B0,Few-Shot (3 regimes x 2 modes),120,36.0,NVIDIA GeForce RTX 4060 Laptop GPU,4.0,0.4,0.8,8.6
+EfficientNet-B0,Corruption Robustness,30,9.0,NVIDIA GeForce RTX 4060 Laptop GPU,4.0,0.4,0.8,8.6
+EfficientNet-B0,Layer-wise Probing,0,0.0,NVIDIA GeForce RTX 4060 Laptop GPU,4.0,0.4,0.8,8.6

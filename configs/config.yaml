@@ -1,0 +1,52 @@
+# =============================================================================
+# GNR 638 Assignment 2 — Transfer Learning & Robustness Pipeline
+# Central configuration file
+# =============================================================================
+
+# --- Paths ---
+data_dir: "dataloader/AID"
+output_dir: "outputs"
+
+# --- Reproducibility ---
+seed: 42
+
+# --- Data ---
+val_ratio: 0.20          # 80/20 train-val split
+batch_size: 16           # Reduced for VRAM safety
+num_workers: 0           # Windows safe
+pin_memory: false        # Windows safe
+image_size: 224           # Input resolution (all 3 models use 224)
+
+# --- Training ---
+epochs_full: 30           # Max epochs for full-data training
+epochs_few_shot: 20       # Max epochs for few-shot training
+learning_rate: 0.001
+weight_decay: 0.0001
+empty_cache_freq: 50      # Clear GPU cache every 50 batches
+
+# --- Models ---
+models:
+  - resnet50
+  - densenet121
+  - efficientnet_b0
+
+# --- Few-Shot Fractions ---
+few_shot_fractions:
+  - 1.0
+  - 0.2
+  - 0.05
+
+# --- Corruption Parameters ---
+corruption:
+  gaussian_noise_sigmas:
+    - 0.05
+    - 0.1
+    - 0.2
+  motion_blur_kernel_size: 15
+  brightness_factors:
+    - 0.5
+    - 1.5
+
+# --- Layer-wise Probing ---
+probing:
+  samples_per_class: 30   # For PCA visualisation subset

@@ -1,0 +1,3 @@
+model,mode,regime,epochs,train_acc,val_acc,train_val_gap,delta
+efficientnet_b0,Mode_A,5%,1,0.0299625468164794,0.0,0.0299625468164794,
+efficientnet_b0,Mode_B,5%,1,0.0599250936329588,0.0,0.0599250936329588,

@@ -1,0 +1,4 @@
+Model,Total Params (M),Trainable (M),MACs (G),FLOPs (G)
+resnet50,23.57,23.57,4.132,8.264
+densenet121,6.98,6.98,2.833,5.667
+efficientnet_b0,4.05,4.05,0.385,0.769
